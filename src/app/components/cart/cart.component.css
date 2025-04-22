@@ -1,0 +1,44 @@
+.poke-img{
+  width: 300px;
+  height: 300px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.ingredient-item{
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ingredient-item-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.ingredient-name{
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.ingredient-price{
+  font-weight: 200;
+}
+.ingredient-actions{
+  margin-left: 20px;
+  display: flex;
+  gap:15px;
+  align-items: center;
+  justify-content: flex-end;
+  min-width: 119px
+}
+
+.total-amount{
+  font-weight: 200;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
