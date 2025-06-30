@@ -10,6 +10,7 @@ import {CartService} from '../../services/cart/cart.service';
 import {PokeIngredient} from '../../models';
 import {ToastrService} from 'ngx-toastr';
 import {MatProgressSpinner} from '@angular/material/progress-spinner';
+import {BowlNameSelectorComponent} from './components/bowl-name-selector/bowl-name-selector.component';
 
 @Component({
   selector: 'app-cart',
@@ -25,7 +26,8 @@ import {MatProgressSpinner} from '@angular/material/progress-spinner';
     CurrencyPipe,
     MatIconButton,
     MatIcon,
-    MatProgressSpinner
+    MatProgressSpinner,
+    BowlNameSelectorComponent
   ],
   templateUrl: './cart.component.html',
   styleUrl: './cart.component.css'
