@@ -1,4 +1,5 @@
 export interface PokeCart {
+  bowlName: string|null
   ingredients: PokeCartIngredient[],
 }
 

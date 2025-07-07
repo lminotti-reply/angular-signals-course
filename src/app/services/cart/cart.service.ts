@@ -12,7 +12,7 @@ export class CartService {
    * Cart internal data structure
    * @private
    */
-  private _cart = signal<PokeCart>({ingredients: []});
+  private _cart = signal<PokeCart>({ingredients: [], bowlName: ''});
 
   /**
    * Cart data
@@ -58,7 +58,7 @@ export class CartService {
    * Cart reset
    */
   public reset() {
-    this._cart.set({ingredients: []});
+    this._cart.update(cart => ({...cart,ingredients: []}));
   }
 
   /**
@@ -100,4 +100,10 @@ export class CartService {
     })
   }
 
+  /**
+   * Set the bowl name
+   */
+  setBowlName(bowlName: string) {
+    this._cart.update(cart => ({...cart, bowlName}));
+  }
 }
