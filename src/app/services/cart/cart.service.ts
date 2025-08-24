@@ -46,7 +46,7 @@ export class CartService {
 
 
   /**
-   * True iff the cart is full (3 ingredients)
+   * True iff the cart is full (4 ingredients)
    */
   public cartFull = computed(()=> {
     return (this.cart()?.ingredients??[])
